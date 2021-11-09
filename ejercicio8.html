@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="ejercicio 4">         
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+    
+    const data = {
+      title_1: " Tu concierto",
+      paragraph_1: "Bienvenido a este blog de conciertos ",
+      icon:"images/icon.png",
+      concierto:"images/concierto.jpg ",
+    }
+    
+    const element = (
+      <div>
+        <h2><img width='10%' height='10%'src={data.icon}></img>{data.title_1}</h2>
+        <p>{data.paragraph_1}</p>
+        <img width= "100%" height='100%' src={data.concierto}></img>
+      </div>
+);
+
+  ReactDOM.render(
+    element,
+    document.getElementById('ejercicio 4')
+    );
+    
+    </script>
+  </body>
+</html>

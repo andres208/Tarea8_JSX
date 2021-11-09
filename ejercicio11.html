@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="ejercicio 4">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+    
+    const data = {
+    title_1: "Registro en nuestra tienda",
+    nombre: "Nombre de usuario:",
+    email: "Email: ",
+    edad: "Edad:",
+    genero: "Genero ",
+    seleccion_1:"Masculino",
+    seleccion_2:"Femenino",
+    recomendado_por: "Recomendado por: ",
+    comentario: "Comentarios: ",
+    seleccion_3: "Acepto términos y condiciones ",
+    seleccion_4:"Google",
+    seleccion_5:"Gmail",
+    seleccion_6:"Facebook",
+    boton:"Registrar"
+  }
+  
+  const element = (
+    <div>
+      <h1>{data.title_1}</h1>
+      
+      <p>{data.nombre}<br/>
+        <input type="text" /> </p>
+      
+      <p>{data.email} <br/>
+      <input type="email"/></p>
+    
+      <p>{data.edad}<br/>
+      <input type="text"/> </p>
+    
+      <p>{data.genero}<br/>
+      <input type="radio"/>{data.seleccion_1}<br/>
+      <input type="radio"/>{data.seleccion_2}</p>
+    
+      <p>{data.recomendado_por}<br/>
+      <select>
+      <option >{data.seleccion_4}</option>
+      <option >{data.seleccion_5}</option>
+      <option >{data.seleccion_6}</option>
+      </select></p>
+    
+      <p>{data.comentario}<br/>
+      <textarea type="text"/></p>
+    
+      <p>{data.seleccion_3}<br/>
+      <input type="checkbox"/></p>
+      <input type="submit" value= {data.boton}/>
+    </div>
+    );
+    
+    ReactDOM.render(
+      element,
+      document.getElementById('ejercicio 4')
+      );
+             
+    </script>
+  </body>
+</html>
